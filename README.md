@@ -1,2 +1,2 @@
 # Kubernates
-This repo consists of kubernates examples.
+This repo consists of kubernates examples. 
