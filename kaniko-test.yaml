@@ -21,4 +21,7 @@ spec:
         items:
           - key: .dockerconfigjson
             path: config.json
-
+  tolerations:
+  - key: "node-role.kubernetes.io/master"
+    operator: "Exists"
+    effect: "NoSchedule"
