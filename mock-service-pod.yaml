@@ -8,6 +8,8 @@ spec:
   containers:
   - name: mock-service
     image: docker.io/mock-service:20210623IST
+  imagePullSecrets:
+  - name: regcred
   restartPolicy: Never
   tolerations:
   - key: "node-role.kubernetes.io/master"
