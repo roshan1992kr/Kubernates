@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/roshan1992kr/mock-api-service",
-            "--destination=roshankumar/mock-service:20210623IST"]
+            "--destination=roshankumar/mock-service:20210625IST"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
@@ -23,5 +23,8 @@ spec:
             path: config.json
   tolerations:
   - key: "node-role.kubernetes.io/master"
+    operator: "Exists"
+    effect: "NoSchedule"
+  - key: "node.kubernetes.io/disk-pressure"
     operator: "Exists"
     effect: "NoSchedule"
