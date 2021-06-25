@@ -8,6 +8,13 @@ spec:
   containers:
   - name: mock-service
     image: docker.io/roshankumar/mock-service:20210625IST
+    resources:
+      requests:
+        cpu: 100m
+        memory: 300Mi
+      limits:
+        cpu: 500m
+        memory: 700Mi
   imagePullSecrets:
   - name: regcred
   restartPolicy: Never
