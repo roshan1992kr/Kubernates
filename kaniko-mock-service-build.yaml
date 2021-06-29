@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/roshan1992kr/mock-api-service",
-            "--destination=roshankumar/mock-service:20210629-1200IST"]
+            "--destination=roshankumar/mock-service:20210629-1230IST"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
