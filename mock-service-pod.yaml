@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: mock-service
-    image: docker.io/roshankumar/mock-service:20210629-1530IST
+    image: docker.io/roshankumar/mock-service:20210629-1730IST
     resources:
       requests:
         cpu: 100m
